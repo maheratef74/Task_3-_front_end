@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+   
+}
+.comments {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+.like {
+    background-color: rgb(19, 19, 221); 
+    color: #ddd; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like:hover {
+    background-color: rgb(45, 45, 245); 
+    transform: scale(1.05); 
+}
+
+.like:active {
+    background-color: rgb(19, 19, 221);
+    transform: scale(0.95); 
+}
