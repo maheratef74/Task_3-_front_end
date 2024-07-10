@@ -2,17 +2,83 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
 .post {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-   
+    border: 1px solid #ddd; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
+
+.post:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.post h2 {
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.post p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
 .comments {
     margin-left: 20px;
     padding-left: 10px;
     border-left: 2px solid #ddd;
+    margin-top: 20px; 
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #eee; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
 }
+
+.comments h3 {
+    font-size: 20px; 
+    color: #444; 
+}
+.add-comment {
+    margin-top: 20px; 
+}
+
+.add-comment input {
+    width: calc(100% - 90px); 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-right: 10px; 
+    box-sizing: border-box; 
+}
+
+.add-comment button {
+    background-color: rgb(19, 19, 221); 
+    color: #ddd;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.add-comment button:hover {
+    background-color: rgb(45, 45, 245);
+    transform: scale(1.05); 
+}
+.add-comment button:active {
+    background-color: rgb(19, 19, 221); 
+    transform: scale(0.95);
+}
+
 .like {
     background-color: rgb(19, 19, 221); 
     color: #ddd; 

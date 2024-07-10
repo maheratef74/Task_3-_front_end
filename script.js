@@ -39,7 +39,7 @@ window.onload = function() {
                 const addCommentBtn = postDiv.querySelector('.add-comment-btn');
                 const commentInput = postDiv.querySelector('.comment-input');
 
-                addCommentBtn.addEventListener('click', () => {
+                function addComment() {
                     const commentText = commentInput.value;
                     if (commentText.trim()) {
                         const commentDiv = document.createElement('div');
@@ -62,6 +62,12 @@ window.onload = function() {
                         });
 
                         commentInput.value = '';
+                    }
+                }
+                addCommentBtn.addEventListener('click', addComment);
+                commentInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        addComment();
                     }
                 });
 
